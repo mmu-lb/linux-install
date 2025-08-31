@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+backup_items=(
+    "$HOME/.config/hypr"
+    "$HOME/.config/waybar"
+    "$HOME/.config/kitty"
+    "$HOME/.config/fish"
+    "$HOME/.config/omf"
+    "$HOME/.bashrc"
+    "$HOME/.zshrc"
+    "$HOME/.config/pulse"
+    "$HOME/.config/yay"
+)
+
+repo_backup_dir=~/linux-install/
+
+mkdir -p "$repo_backup_dir"
+
+for item in "${backup_items[@]}"; do
+    if [ -e "$item" ]; then
+        rsync -a --delete "$item" "$repo_backup_dir"
+        # Explanation:
+        # -a : archive mode, preserves permissions, symlinks, timestamps
+        # --delete : remove files in destination that no longer exist in source
+    fi
+done
+
+# ------------------------
+# Git commands
+# ------------------------
+cd ~/linux-install || { echo "Repo not found"; exit 1; }
+git add -A
+git commit -m "Updated selective config backup"
+git push
