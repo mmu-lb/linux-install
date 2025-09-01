@@ -12,7 +12,7 @@ backup_items=(
     "$HOME/.config/yay"
 )
 
-repo_backup_dir=~/linux-install/
+repo_backup_dir=~/linux-install/scripts
 
 mkdir -p "$repo_backup_dir"
 
