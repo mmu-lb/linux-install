@@ -10,6 +10,7 @@ backup_items=(
     "$HOME/.zshrc"
     "$HOME/.config/pulse"
     "$HOME/.config/yay"
+    "$HOME/.config/helix"
 )
 
 repo_backup_dir=~/linux-install/configs

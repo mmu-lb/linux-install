@@ -1,0 +1,10 @@
+inherits = "tokyonight"
+
+"ui.statusline.normal" = { fg = "black", bg = "#ff5f5f", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "black", bg = "#5fff5f", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "white", bg = "#5f5fff", modifiers = ["bold"] }
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
