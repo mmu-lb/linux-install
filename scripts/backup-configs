@@ -6,8 +6,6 @@ backup_items=(
     "$HOME/.config/kitty"
     "$HOME/.config/fish"
     "$HOME/.config/omf"
-    "$HOME/.bashrc"
-    "$HOME/.zshrc"
     "$HOME/.config/pulse"
     "$HOME/.config/yay"
     "$HOME/.config/helix"
