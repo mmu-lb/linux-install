@@ -5,7 +5,8 @@
     
     "modules-left": [
         "clock",
-        "temperature"
+        "temperature",
+        "custom/fan"
     ],
 
     "modules-center": [
@@ -88,5 +89,22 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+
+    "custom/fan": {
+        "format": "{} RPM 󰈐",
+        "interval": 2,
+        "exec": "cat /sys/devices/platform/applesmc.768/fan1_input"
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": "",
+            "active": ""
+        },
+        
+        "all-outputs": true,
+        "show-special": true
     },
 }

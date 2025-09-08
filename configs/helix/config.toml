@@ -2,3 +2,6 @@ theme = "everblush-edited"
 
 [editor]
 color-modes = true
+
+[keys.insert]
+j = { j = "normal_mode" }
