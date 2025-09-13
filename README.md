@@ -36,3 +36,22 @@ vulkan-radeon 1:25.2.1-2
 wayland 1.24.0-1
 wayland-protocols 1.45-1
 xorg-xwayland 24.1.8-1
+
+# sound notes
+
+sudo pacman -Syu
+sudo pacman -S base-devel linux linux-headers linux-firmware sof-firmware alsa-utils alsa-ucm-conf pipewire pipewire-alsa pipewire-pulse wireplumber pavucontrol
+
+CS8409 driver needs to be rebuilt after every kernal update.
+
+git clone https://github.com/egorenar/snd-hda-codec-cs8409.git
+cd snd-hda-codec-cs8409
+
+make clean
+make
+sudo make install
+sudo depmod -a
+
+modinfo snd-hda-codec_cs8409
+aplay -l
+wpctl status
