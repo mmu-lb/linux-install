@@ -9,6 +9,7 @@ backup_items=(
     "$HOME/.config/pulse"
     "$HOME/.config/yay"
     "$HOME/.config/helix"
+    "$HOME/.config/kitty"
 )
 
 repo_backup_dir=~/linux-install/configs
