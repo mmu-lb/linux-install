@@ -19,10 +19,12 @@ window#waybar.hidden {
 #clock,
 #temperature,
 #custom-fan,
+#custom-firewall,
 #pulseaudio,
 #network,
 #power-profiles-daemon,
-#battery
+#battery,
+#window
 {
     color: #161320;
     margin: 2px;
@@ -93,7 +95,15 @@ button:hover {
 }
 
 #custom-fan {
-  background-color: #a78bfa;
+    background-color: #a78bfa;
+}
+
+#window {
+    background-color: #d3d3d3;
+}
+
+#custom-firewall {
+    background-color: #FFC0CB;
 }
 
 #battery {
