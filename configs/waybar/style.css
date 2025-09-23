@@ -60,38 +60,25 @@ button:hover {
     background-color: #a37800;
 }
 
-#workspaces {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  margin: 6px 5px;
-  padding: 0px 6px;
-}
-
 #workspaces button {
-  color: #B5E8E0;
-  background: transparent;
-  padding: 4px 4px;
-  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
-}
-
-#workspaces button.occupied {
-  color: #A6E3A1;
+  padding: 0 1px;
+  color: #aaa;
 }
 
 #workspaces button.active {
-  color: #89B4FA;
-  text-shadow: 0 0 4px #ABE9B3;
+    color: #fff;
+    font-weight: bold;
+    border: 2px;
 }
 
-#workspaces button:hover {
-  color: #89B4FA;
+#workspaces button.focused {
+  color: #fff;
+  background: #444;
+  border-radius: 5px;
 }
 
-#workspaces button.active:hover {}
-
-
-#clock {
-    background-color: #64727D;
+#workspaces button.urgent {
+  color: #ff5555;
 }
 
 #custom-fan {

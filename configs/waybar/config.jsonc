@@ -106,14 +106,9 @@
     },
 
     "hyprland/workspaces": {
-        "format": "{icon}",
-        "format-icons": {
-            "default": "",
-            "active": ""
-        },
-        
-        "all-outputs": true,
-        "show-special": true
+        "format": "{id}",
+        "disable-scroll": false,
+        "all-outputs": true
     },
 
     "hyprland/window": {
