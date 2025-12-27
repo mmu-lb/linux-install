@@ -7,6 +7,7 @@
 Enable and start service:
 
 > sudo systemctl enable ufw
+
 > sudo systemctl start ufw
 
 Enable ufw:
@@ -20,6 +21,7 @@ Default rules should be fine:
 Simple rules to  set if needed:
 
 > sudo ufw default deny incoming
+
 > sudo ufw default allow outgoing
 
 ## Updating Arch
