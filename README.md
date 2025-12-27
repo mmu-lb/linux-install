@@ -158,3 +158,22 @@ Font Awesome is needed for Waybar by default.
 Update font cache:
 
 > fc-cache -fv
+
+## SSH for github
+
+Generate a key:
+
+> ssh-keygen -t ed25519 -C "github"
+
+Start SSH agent (fish shell compatable command):
+
+> eval (ssh-agent -c)
+
+Load key in to agent:
+
+> ssh-add ~/.ssh/id_ed25519
+
+Copy the key and add to github in SSH and GPG Keys section:
+
+> cat ~/.ssh/id_ed25519.pub
+
