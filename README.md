@@ -177,3 +177,22 @@ Copy the key and add to github in SSH and GPG Keys section:
 
 > cat ~/.ssh/id_ed25519.pub
 
+Enter user details before first commit:
+
+> git config --global user.name "Your Name"
+> git config --global user.email "you@example.com"
+
+Steps for an initial commit:
+
+> git init
+> git add .
+> git commit -m "initial backup"
+> git branch -M main
+> git remote add origin git@github.com:YOUR_USERNAME/YOUR_REPO.git
+> git push -f origin main
+
+Usual workflow for committing changes:
+
+> git add .
+> git commit -m "describe what changed"
+> git push origin main
