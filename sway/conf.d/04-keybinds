@@ -1,0 +1,13 @@
+### Exec Apps
+bindsym $mod+o exec $browser
+bindsym $mod+d exec $menu
+bindsym $mod+Return exec $terminal
+
+### System
+
+bindsym $mod+Shift+q kill
+bindsym $mod+Shift+c reload
+
+### Exit Command
+
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'

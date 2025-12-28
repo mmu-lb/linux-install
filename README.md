@@ -47,6 +47,7 @@ Use brightnessctl:
 Brightness keys should now work on Sway on the Macbook Pro 14,1. Following lines are in the default config:
 
 > bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+
 > bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
 Or in console:
@@ -58,6 +59,7 @@ Or in console:
 On the Macbook Pro 14,1 the backlight is exposed by spi::kbd_backlight:
 
 > cat /sys/class/leds/spi::kbd_backlight/max_brightness
+
 > echo 30 | sudo tee /sys/class/leds/spi::kbd_backlight/brightness
 
 brightnessctl can be used:
@@ -67,6 +69,7 @@ brightnessctl can be used:
 These lines can be added to the Sway config file:
 
 > bindsym XF86KbdBrightnessUp exec brightnessctl -d spi::kbd_backlight set +10%
+
 > bindsym XF86KbdBrightnessDown exec brightnessctl -d spi::kbd_backlight set 10%-
 
 ## Sound
@@ -148,7 +151,9 @@ Use mbpfan:
 Start mbpfan as a systemd service:
 
 > sudo systemctl enable mbpfan.service
+
 > sudo systemctl daemon-reload
+
 > sudo systemctl start mbpfan.service
 
 ## Fonts
@@ -182,19 +187,28 @@ Copy the key and add to github in SSH and GPG Keys section:
 Enter user details before first commit:
 
 > git config --global user.name "Your Name"
+
 > git config --global user.email "you@example.com"
 
 Steps for an initial commit:
 
 > git init
+
 > git add .
+
 > git commit -m "initial backup"
+
 > git branch -M main
+
 > git remote add origin git@github.com:YOUR_USERNAME/YOUR_REPO.git
+
 > git push -f origin main
 
 Usual workflow for committing changes:
 
 > git add .
+
 > git commit -m "describe what changed"
+
 > git push origin main
+

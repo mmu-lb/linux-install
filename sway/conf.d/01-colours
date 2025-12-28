@@ -1,0 +1,16 @@
+### Nord colors
+
+set $bg      #2E3440
+set $bg_alt  #3B4252
+set $fg      #D8DEE9
+set $blue    #81A1C1
+set $cyan    #88C0D0
+set $green   #A3BE8C
+set $yellow  #EBCB8B
+set $red     #BF616A
+
+client.focused          $blue   $blue   $fg   $cyan
+client.focused_inactive $bg_alt $bg_alt $fg   $bg_alt
+client.unfocused        $bg     $bg     $fg   $bg
+client.urgent           $red    $red    $fg   $red
+client.placeholder      $bg     $bg     $fg   $bg
