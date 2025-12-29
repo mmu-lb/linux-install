@@ -1,5 +1,7 @@
 // -*- mode: jsonc -*-
 {
+    // link from /etc/xdg/waybar/config.jsonc
+
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 12, // Waybar height (to be removed for auto height)
@@ -29,7 +31,8 @@
         //"sway/language",
         "battery",
         //"battery#bat2",
-        "clock"
+        "clock",
+        "custom/shutdown"
         //"tray",
         //"custom/power"
     ],
@@ -101,14 +104,6 @@
             "activated": "",
             "deactivated": ""
         }
-    },
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10,
-        // "icons": {
-        //   "blueman": "bluetooth",
-        //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
-        // }
     },
     "clock": {
         // "timezone": "America/New_York",

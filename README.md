@@ -166,6 +166,15 @@ Update font cache:
 
 > fc-cache -fv
 
+Find fonts:
+
+> fc-list | grep -i xyz
+
+Fonts installed:
+- otf-font-awesome
+- ttf-roboto-mono-nerd
+- ttf-roboto-mono
+
 ## SSH for github
 
 Generate a key:

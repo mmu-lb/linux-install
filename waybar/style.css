@@ -1,3 +1,5 @@
+/* link from /etc/xdg/waybar/style.css */
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -47,6 +49,7 @@ window#waybar.hidden {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
+#custom-shutdown,
 #mpd {
     padding: 0 8px;
     margin: 4px 0;

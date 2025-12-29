@@ -1,7 +1,7 @@
 ### Apps
 
 set $browser firefox
-set $menu wmenu-run
+set $menu wofi --show drun --width 35%
 set $terminal foot
 
 ### Keys

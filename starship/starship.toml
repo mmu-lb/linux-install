@@ -1,0 +1,17 @@
+# link from ~/.config/starship.toml
+
+add_newline = false
+
+[character]
+success_symbol = "[❯](bold cyan)"
+error_symbol = "[❯](bold red)"
+
+[directory]
+style = "bold blue"
+truncate_to_repo = false
+
+[git_branch]
+style = "yellow"
+
+[git_status]
+style = "yellow"

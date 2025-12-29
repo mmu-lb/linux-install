@@ -1,3 +1,5 @@
+# link from ~/.config/sway/config
+
 include ~/linux-install/sway/conf.d/*
 
 
