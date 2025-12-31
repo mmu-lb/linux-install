@@ -1,0 +1,8 @@
+# link from ~/.local/share/applications/chatgpt.desktop
+
+[Desktop Entry]
+Name=ChatGPT
+Exec=chromium --profile-directory=ChatGPT --app=https://chat.openai.com --no-first-run --no-default-browser-check --disable-background-networking
+Icon=chromium
+Type=Application
+Categories=Network;

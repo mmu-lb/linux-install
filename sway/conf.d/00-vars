@@ -1,8 +1,12 @@
 ### Apps
 
-set $browser firefox
+set $browser zen-browser
 set $menu wofi --show drun --width 35%
 set $terminal foot
+
+#### Chromium Apps
+
+set $chatgpt chromium --profile-directory=ChatGPT --app=https://chat.openai.com --no-first-run --no-default-browser-check --disable-background-networking
 
 ### Keys
 
