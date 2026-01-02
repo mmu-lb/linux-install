@@ -33,6 +33,8 @@ window#waybar.hidden {
 }
 
 
+#window,
+#workspaces,
 #clock,
 #battery,
 #cpu,
@@ -52,14 +54,19 @@ window#waybar.hidden {
 #custom-shutdown,
 #mpd {
     padding: 0 8px;
-    margin: 4px 0;
+    margin: 2px 0px;
     background: #3B4252;
     border-radius: 4px;
 }
 
-#window,
 #workspaces {
-    margin: 0 4px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: transparent;
+}
+
+#window {
+    background: transparent;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -87,6 +94,7 @@ window#waybar.hidden {
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
+    color: black;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
