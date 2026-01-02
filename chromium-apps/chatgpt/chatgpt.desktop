@@ -3,6 +3,6 @@
 [Desktop Entry]
 Name=ChatGPT
 Exec=chromium --profile-directory=ChatGPT --app=https://chat.openai.com --no-first-run --no-default-browser-check --disable-background-networking
-Icon=chromium
+Icon=~/linux-install/chromium-apps/chatgpt/chatgpt-icon.png
 Type=Application
 Categories=Network;

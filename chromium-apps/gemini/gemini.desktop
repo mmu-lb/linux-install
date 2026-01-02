@@ -1,0 +1,8 @@
+# link from ~/.local/share/applications/gemini.desktop
+
+[Desktop Entry]
+Name=Gemini
+Exec=chromium --profile-directory=ChatGPT --app=https://gemini.google.com/app --no-first-run --no-default-browser-check --disable-background-networking
+Icon=~/linux-install/chromium-apps/gemini/gemini-icon.png
+Type=Application
+Categories=Network;

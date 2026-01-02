@@ -1,7 +1,7 @@
 ### Apps
 
 set $browser zen-browser
-set $menu wofi --show drun --width 35%
+set $menu rofi -show drun
 set $terminal foot
 
 #### Chromium Apps
