@@ -1,3 +1,6 @@
 # link from ~/.config/helix/config.toml
 
-theme = "nord-night"
+theme = "nord"
+
+[keys.insert]
+j = { j = "normal_mode" }
