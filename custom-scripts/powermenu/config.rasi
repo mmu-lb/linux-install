@@ -2,10 +2,13 @@
 
 configuration {
     show-icons: false;
+    lines: 4;
 }
 
 window {
-    width: 90%;
+    width: 8%;
+    padding: 4px;
+    height: 128px;
 }
 
 inputbar {
