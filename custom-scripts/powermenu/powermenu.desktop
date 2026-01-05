@@ -1,0 +1,8 @@
+# link from ~/.local/share/applications/powermenu.desktop
+
+[Desktop Entry]
+Name=Shutdown
+Exec=~/linux-install/custom-scripts/powermenu/powermenu.sh
+Icon=~/linux-install/custom-scripts/powermenu/powericon.png
+Type=Application
+Categories=Utility;
