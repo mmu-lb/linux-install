@@ -1,3 +1,5 @@
+# link from ~/.config/helix/languages.toml
+
 [[language]]
 name = "c"
 language-servers = ["clangd"]
