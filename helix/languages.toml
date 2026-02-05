@@ -2,9 +2,8 @@
 
 [[language]]
 name = "c"
-language-servers = ["clangd"]
+language-servers = [ { name = "clangd", args = ["--header-insertion=never"] } ]
 
 [[language]]
 name = "cpp"
-language-servers = ["clangd"]
-
+language-servers = [ { name = "clangd", args = ["--header-insertion=never"] } ]
