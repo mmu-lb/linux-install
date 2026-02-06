@@ -9,8 +9,10 @@ set $green   #A3BE8C
 set $yellow  #EBCB8B
 set $red     #BF616A
 
-client.focused          $blue   $blue   $fg   $cyan
-client.focused_inactive $bg_alt $bg_alt $fg   $bg_alt
-client.unfocused        $bg     $bg     $fg   $bg
-client.urgent           $red    $red    $fg   $red
-client.placeholder      $bg     $bg     $fg   $bg
+# class                 border  background text indicator child_border
+
+client.focused          $blue   $blue      $fg  $cyan     $blue
+client.focused_inactive $bg_alt $bg_alt    $fg  $bg_alt   $bg_alt
+client.unfocused        $bg_alt $bg        $fg  $bg       $bg_alt
+client.urgent           $red    $red       $fg  $red      $red
+client.placeholder      $bg     $bg        $fg  $bg       $bg
