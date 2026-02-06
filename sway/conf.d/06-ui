@@ -7,7 +7,7 @@ default_floating_border pixel 1
 gaps outer 0
 
 # inner gaps increased to account for borders
-gaps inner 6
+gaps inner 3
 
 
 ### Optional: smart settings off for consistency
