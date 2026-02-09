@@ -15,7 +15,7 @@
 }
 
 window {
-    background-color: @bg;
+    border-radius: 12px;
     border: 1px;
     border-color: @blue;
     border-radius: 0px;

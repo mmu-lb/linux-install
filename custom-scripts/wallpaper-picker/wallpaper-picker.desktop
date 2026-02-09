@@ -1,0 +1,8 @@
+# link from ~/.local/share/applications/wallpaper-picker.desktop
+
+[Desktop Entry]
+Name=Wallpaper Picker
+Exec=sh -c $HOME/linux-install/custom-scripts/wallpaper-picker/wallpaper-picker.sh
+Icon=~/linux-install/custom-scripts/wallpaper-picker/wallpaper-picker.png
+Type=Application
+Categories=Utility;

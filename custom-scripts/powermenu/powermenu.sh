@@ -4,7 +4,7 @@
 OPTIONS="Shutdown\nReboot\nLogout\nCancel"
 
 # Show Rofi menu
-CHOICE=$(echo -e $OPTIONS | rofi -dmenu -config ~/linux-install/custom-scripts/powermenu/config.rasi -p "Power Menu:")
+CHOICE=$(echo -e "$OPTIONS" | rofi -dmenu -config ~/linux-install/custom-scripts/powermenu/config.rasi -p "Power Menu:")
 
 # Act on choice
 case "$CHOICE" in
@@ -17,7 +17,7 @@ case "$CHOICE" in
     Logout)
         swaymsg exit
         ;;
-    Cancel|"")
+    *)
         exit 0
         ;;
 esac

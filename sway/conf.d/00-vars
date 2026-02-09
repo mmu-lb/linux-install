@@ -3,7 +3,6 @@
 set $browser zen-browser
 set $menu rofi -show drun
 set $terminal foot
-set $powermenu ~/linux-install/custom-scripts/powermenu/powermenu.sh 
 
 #### Chromium Apps
 

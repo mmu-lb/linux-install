@@ -3,7 +3,7 @@ bindsym $mod+o exec $browser
 bindsym $mod+Shift+g exec $chatgpt
 bindsym $mod+d exec $menu
 bindsym $mod+Return exec $terminal
-bindsym $mod+Shift+Return exec $powermenu
+# bindsym $mod+Shift+Return exec $powermenu
 
 ### System
 
