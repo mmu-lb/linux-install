@@ -70,4 +70,5 @@ element-text {
 
 element-text selected {
     text-color: @bg-alt;
+    text-transform: bold;
 }
