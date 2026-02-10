@@ -1,33 +1,27 @@
 @import "~/linux-install/rofi/config.rasi"
 
 window {
-	width: 70%;
-	padding: 0;
-	spacing: 0;
-}
-
-element {
-    orientation: vertical;
-    padding: 0px;
-    spacing: 0px;
-}
-
-element-icon {
-	size: 250px; 
-    cursor: inherit;
-}
-
-element-text {
-	enabled: false;
-}
-
-listview {
-	columns: 3;
-    lines: 2;
-	padding: 0;
-	spacing: 0;
+	width: 80%;
+	height: 0;
 }
 
 inputbar {
 	enabled:false;
+}
+
+listview {
+	columns: 5;
+    lines: 1;
+}
+
+element {
+	orientation: vertical;
+}
+
+element-icon {
+	size: 180px;
+}
+
+element-text {
+	enabled: false;
 }

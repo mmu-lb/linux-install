@@ -12,8 +12,8 @@
 
     background-color: @bg;
     text-color:       @fg;
-    border:           1px;
-    padding:          0;
+    border:           0;
+    padding:          1;
     margin:           0;
     spacing:          0;
 }
