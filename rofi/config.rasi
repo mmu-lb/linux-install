@@ -73,7 +73,7 @@ configuration {
 /*	display-window: ;*/
 /*	display-run: ;*/
 /*	display-ssh: ;*/
-	display-drun: "  " ;
+	display-drun: " " ;
 /*	display-combi: ;*/
 /*	display-keys: ;*/
 /*	display-filebrowser: ;*/

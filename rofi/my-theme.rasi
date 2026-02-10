@@ -10,43 +10,57 @@
     yellow: #EBCB8B;
     red:    #BF616A;
 
-    background-color: transparent;
+    background-color: @bg;
     text-color: @fg;
+    border: 1px;
+    padding: 0px;
+    margin: 0;
+    spacing: 0;
 }
 
 window {
-    border-radius: 12px;
-    border: 1px;
+    border: 2px;
     border-color: @blue;
-    border-radius: 0px;
-    padding: 2px;
+    border-radius: 4px;
     width: 30%;
-}
-
-entry {
-    placeholder: "";
 }
 
 inputbar {
     background-color: @bg-alt;
-    text-color: @fg;
-    padding: 8px;
-    border-radius: 0px;
+    padding: 4px;
+    border-radius: 2px;
 }
 
-textbox {
-    color: red;
-    placeholder: "iuhuhuhh";
+entry {
+    background-color: transparent;
+    placeholder: "";
+}
+
+prompt {
+    background-color: transparent;
+}
+
+case-indicator {
+    background-color: transparent;
 }
 
 listview {
     background-color: @bg;
-    spacing: 2px;
+    lines: 12;
 }
 
 element {
     padding: 4px;
-    spacing: 10px;
+    border-radius: 2px;
+}
+
+element-text {
+    background-color: transparent;
+    padding: 4px;
+}
+
+element-icon {
+    background-color: transparent;
 }
 
 element normal.normal {
@@ -55,10 +69,8 @@ element normal.normal {
 
 element selected.normal {
     background-color: @blue;
-    text-color: @bg;
 }
 
 element urgent.normal {
     background-color: @red;
-    text-color: @fg;
 }
