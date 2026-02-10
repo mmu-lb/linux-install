@@ -11,29 +11,29 @@
     red:    #BF616A;
 
     background-color: @bg;
-    text-color: @fg;
-    border: 1px;
-    padding: 0px;
-    margin: 0;
-    spacing: 0;
+    text-color:       @fg;
+    border:           1px;
+    padding:          0;
+    margin:           0;
+    spacing:          0;
 }
 
 window {
-    border: 2px;
-    border-color: @blue;
+    border:        2px;
+    border-color:  @blue;
     border-radius: 4px;
-    width: 30%;
+    width:         30%;
 }
 
 inputbar {
     background-color: @bg-alt;
-    padding: 4px;
-    border-radius: 2px;
+    padding:          6px;
+    border-radius:    2px;
 }
 
 entry {
     background-color: transparent;
-    placeholder: "";
+    placeholder:      "";
 }
 
 prompt {
@@ -46,31 +46,28 @@ case-indicator {
 
 listview {
     background-color: @bg;
-    lines: 12;
+    lines:            12;
 }
 
 element {
-    padding: 4px;
-    border-radius: 2px;
+    background-color: @bg;
+    padding:          4px;
+    border-radius:    2px;
 }
 
-element-text {
-    background-color: transparent;
-    padding: 4px;
+element selected {
+    background-color: @blue;
 }
 
 element-icon {
     background-color: transparent;
 }
 
-element normal.normal {
-    background-color: @bg;
+element-text {
+    background-color: transparent;
+    padding:          4px;
 }
 
-element selected.normal {
-    background-color: @blue;
-}
-
-element urgent.normal {
-    background-color: @red;
+element-text selected {
+    text-color: @bg-alt;
 }
