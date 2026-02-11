@@ -1,16 +1,18 @@
 @import "~/.config/rofi/config.rasi"
 
-configuration {
-    show-icons: false;
-    lines: 4;
-}
-
 window {
     width: 8%;
-    padding: 4px;
-    height: 128px;
+    height: 0;
 }
 
 inputbar {
+    enabled: false;
+}
+
+listview {
+    lines: 4;
+}
+
+element-icon {
     enabled: false;
 }
