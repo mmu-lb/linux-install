@@ -1,0 +1,31 @@
+# Symlink from ~/.config/mako/config
+
+# Global Settings
+font=RobotoMono 10
+width=300
+height=110
+margin=10
+padding=5
+border-size=2
+border-radius=5
+icons=1
+icon-path=/usr/share/icons/Papirus-Dark
+max-icon-size=48
+
+
+# Colors (Nord Palette)
+background-color=#2e3440
+text-color=#eceff4
+border-color=#88c0d0
+progress-color=source #4c566a
+
+[urgency=low]
+border-color=#4c566a
+
+[urgency=normal]
+border-color=#81a1c1
+
+# Critical Alert (Battery Low - Nord Aurora Red)
+[urgency=high]
+border-color=#bf616a
+default-timeout=0

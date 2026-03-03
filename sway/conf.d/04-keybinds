@@ -6,6 +6,9 @@ bindsym $mod+Return exec $terminal
 bindsym $mod+Shift+Return exec $powermenu
 bindsym $mod+Shift+w exec $wallpaper-picker
 
+### Misc
+bindsym $mod+Escape exec makoctl dismiss
+
 ### System
 
 bindsym $mod+Shift+q kill
