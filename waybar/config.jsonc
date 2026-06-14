@@ -13,6 +13,7 @@
         "sway/workspaces",
         "sway/mode",
         "sway/scratchpad",
+        //"niri/workspaces",
         "custom/media"
     ],
     "modules-center": [
@@ -210,7 +211,7 @@
 		"menu-actions": {
 			"shutdown": "systemctl poweroff",
 			"reboot": "systemctl reboot",
-			"logout": "swaymsg exit"
+			"logout": "niri msg action quit"
 		  }
     }
 }

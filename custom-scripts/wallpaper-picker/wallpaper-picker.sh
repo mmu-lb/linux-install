@@ -10,8 +10,10 @@ done | rofi -dmenu -i -p "Wallpaper Picker" -show-icons -theme "$WP_STYLE")
 
 if [[ -n "$SELECTED" ]]; then
     FULL_PATH="$WP_DIR/$SELECTED"
-
-    echo "output * bg \"$FULL_PATH\" fill" > "$WP_CONF"
-
-    swaymsg reload
+    if [[ "$XDG_CURRENT_DESKTOP" == "sway" ]]; then
+        echo "output * bg \"$FULL_PATH\" fill" > "$WP_CONF"
+        swaymsg reload
+    else
+        awww img "$FULL_PATH"
+    fi
 fi

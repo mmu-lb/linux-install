@@ -1,0 +1,8 @@
+# link from ~/.local/share/applications/claude.desktop
+
+[Desktop Entry]
+Name=Claude AI
+Exec=chromium --profile-directory=ChatGPT --app=https://claude.ai/ --no-first-run --no-default-browser-check --disable-background-networking
+Icon=~/linux-install/custom-apps/claude/claude-icon.png
+Type=Application
+Categories=Network;
