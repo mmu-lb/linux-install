@@ -94,6 +94,8 @@ binds {
     Mod+O hotkey-overlay-title="Browser" { spawn "zen-browser"; }
     Mod+D hotkey-overlay-title="Launcher" { spawn "rofi" "-show" "drun"; }
 
+    Mod+Shift+D hotkey-overlay-title="Dismiss notification" { spawn "makoctl" "dismiss"; }
+
     Mod+A hotkey-overlay-title="LLM" { spawn "chromium" "--profile-directory=ChatGPT" "--app=https://claude.ai/" "--no-first-run" "--no-default-browser-check" "--disable-background-networking"; }
 
     Mod+Shift+W hotkey-overlay-title="Wallpapers" { spawn-sh "~/linux-install/custom-scripts/wallpaper-picker/wallpaper-picker.sh";}
