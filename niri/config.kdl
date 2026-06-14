@@ -15,15 +15,15 @@ input {
     }
 }
 
-/-output "eDP-1" {
-    mode "1920x1080@120.030"
+output "eDP-1" {
+    //mode "1920x1080@120.030"
     scale 2
-    transform "normal"
-    position x=1280 y=0
+    //transform "normal"
+    //position x=1280 y=0
 }
 
 layout {
-    gaps 6
+    gaps 4
     center-focused-column "never"
     preset-column-widths {
         proportion 0.33333
@@ -32,7 +32,7 @@ layout {
     }
     default-column-width { proportion 0.5; }
     focus-ring {
-        width 2
+        width 1
         active-color "#7fc8ff"
         inactive-color "#505050"
     }
@@ -79,7 +79,7 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 6
+    geometry-corner-radius 4
     clip-to-geometry true
 }
 
@@ -100,8 +100,11 @@ binds {
     XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
     XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
 
-    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+    XF86MonBrightnessUp   allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+
+    XF86KbdBrightnessUp   allow-when-locked=true { spawn "brightnessctl" "-d" "spi::kbd_backlight" "set" "+10%"; }
+    XF86KbdBrightnessDown allow-when-locked=true { spawn "brightnessctl" "-d" "spi::kbd_backlight" "set" "10%-"; }    
 
     Mod+O repeat=false { toggle-overview; }
     Mod+Q repeat=false { close-window; }
@@ -232,7 +235,6 @@ binds {
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     Mod+Shift+E { quit; }
-    Ctrl+Alt+Delete { quit; }
-
+   
     Mod+Shift+P { power-off-monitors; }
 }
