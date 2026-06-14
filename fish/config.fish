@@ -18,7 +18,7 @@ function zen-open
 end
 
 function start-yotta
-    bash ~/.config/fish/yotta.sh $argv
+    bash ~/linux-install/fish/yotta.sh $argv
 end
 
 if status is-interactive
