@@ -17,6 +17,11 @@ input {
     }
 }
 
+cursor {
+    hide-when-typing
+    hide-after-inactive-ms 2000
+}
+
 output "eDP-1" {
     //mode "1920x1080@120.030"
     scale 2
@@ -80,6 +85,11 @@ window-rule {
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
 
     block-out-from "screen-capture"
+}
+
+window-rule {
+    match app-id="zen"
+    default-column-width { proportion 1.0; }
 }
 
 window-rule {

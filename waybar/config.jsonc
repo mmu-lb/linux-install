@@ -17,7 +17,8 @@
         "custom/media"
     ],
     "modules-center": [
-        "sway/window"
+        "sway/window",
+        "niri/window"
     ],
     "modules-right": [
         // "mpd",
@@ -132,6 +133,7 @@
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
+        "bat": "BAT0",
         "states": {
             // "good": 95,
             "warning": 30,
