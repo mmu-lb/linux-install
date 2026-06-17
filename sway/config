@@ -1,6 +1,6 @@
 # link from ~/.config/sway/config
 
-include ~/linux-install/sway/conf.d/*
+include ~/linux-dots/sway/conf.d/*
 
 bar {
     swaybar_command waybar

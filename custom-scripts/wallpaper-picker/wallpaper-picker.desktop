@@ -2,7 +2,7 @@
 
 [Desktop Entry]
 Name=Wallpaper Picker
-Exec=sh -c $HOME/linux-install/custom-scripts/wallpaper-picker/wallpaper-picker.sh
-Icon=~/linux-install/custom-scripts/wallpaper-picker/wallpaper-picker.png
+Exec=sh -c $HOME/linux-dots/custom-scripts/wallpaper-picker/wallpaper-picker.sh
+Icon=~/linux-dots/custom-scripts/wallpaper-picker/wallpaper-picker.png
 Type=Application
 Categories=Utility;

@@ -10,8 +10,8 @@ set $chatgpt chromium --profile-directory=ChatGPT --app=https://chat.openai.com 
 
 #### Custom Scripts
 
-set $powermenu ~/linux-install/custom-scripts/powermenu/powermenu.sh
-set $wallpaper-picker ~/linux-install/custom-scripts/wallpaper-picker/wallpaper-picker.sh
+set $powermenu ~/linux-dots/custom-scripts/powermenu/powermenu.sh
+set $wallpaper-picker ~/linux-dots/custom-scripts/wallpaper-picker/wallpaper-picker.sh
 
 ### Keys
 

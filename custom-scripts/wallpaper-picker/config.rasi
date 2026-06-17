@@ -1,4 +1,4 @@
-@import "~/linux-install/rofi/config.rasi"
+@import "~/linux-dots/rofi/config.rasi"
 
 window {
 	width: 80%;

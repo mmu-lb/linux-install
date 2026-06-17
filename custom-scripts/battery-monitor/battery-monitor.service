@@ -4,7 +4,7 @@ After=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=%h/linux-install/custom-scripts/battery-monitor/battery-monitor.sh
+ExecStart=%h/linux-dots/custom-scripts/battery-monitor/battery-monitor.sh
 Restart=always
 Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/%U/bus
 

@@ -2,7 +2,7 @@
 
 [Desktop Entry]
 Name=Shutdown
-Exec=sh -c $HOME/linux-install/custom-scripts/powermenu/powermenu.sh
-Icon=~/linux-install/custom-scripts/powermenu/powericon.png
+Exec=sh -c $HOME/linux-dots/custom-scripts/powermenu/powermenu.sh
+Icon=~/linux-dots/custom-scripts/powermenu/powericon.png
 Type=Application
 Categories=Utility;

@@ -1,8 +1,8 @@
 #!/bin/env bash
 
 WP_DIR="$HOME/wallpaper"
-WP_CONF="$HOME/linux-install/sway/conf.d/15-wallpaper"
-WP_STYLE="$HOME/linux-install/custom-scripts/wallpaper-picker/config.rasi"
+WP_CONF="$HOME/linux-dots/sway/conf.d/15-wallpaper"
+WP_STYLE="$HOME/linux-dots/custom-scripts/wallpaper-picker/config.rasi"
 
 SELECTED=$(command ls -1 "$WP_DIR" | while read -r img; do
     printf "%s\0icon\x1f%s/%s\n" "$img" "$WP_DIR" "$img"

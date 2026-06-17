@@ -209,7 +209,7 @@
         "format" : "",
 		"tooltip": false,
 		"menu": "on-click",
-		"menu-file": "~/linux-install/waybar/power-menu.xml", // Menu file in resources folder
+		"menu-file": "~/linux-dots/waybar/power-menu.xml", // Menu file in resources folder
 		"menu-actions": {
 			"shutdown": "systemctl poweroff",
 			"reboot": "systemctl reboot",
